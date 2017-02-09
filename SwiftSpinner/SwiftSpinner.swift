@@ -15,12 +15,8 @@ public class SwiftSpinner: UIView {
     //
     // Access the singleton instance
     //
-    public class var sharedInstance: SwiftSpinner {
-        struct Singleton {
-            static let instance = SwiftSpinner(frame: CGRect.zero)
-        }
-        return Singleton.instance
-    }
+    public static let sharedInstance = SwiftSpinner(frame: .zero)
+
     
     // MARK: - Init
     
